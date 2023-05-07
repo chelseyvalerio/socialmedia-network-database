@@ -1,0 +1,14 @@
+{
+    "name": "socialmedia-network-database",
+    "version": "1.0.0",
+    "description": "view users and users various thoughts and emoji reactions when interacting with followers",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "express": "^4.18.2",
+        "mongoose": "^7.1.0"
+    }
+}

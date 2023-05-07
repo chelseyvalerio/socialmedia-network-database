@@ -1,6 +1,6 @@
-const { DB, model } = require("mongoose");
+const { Schema, model } = require("mongoose");
 
-const UserDB = new DB (
+const UserSchema = new Schema (
     {
         username: {
             type: String,
@@ -15,11 +15,11 @@ const UserDB = new DB (
             match: [/.+@.+\..+/],
         },
         thoughts: [{
-            type: DB.Types.ObjectId,
+            type: Schema.Types.ObjectId,
             ref: "Thought",
     }],
         followers: [{
-            type: DB.Types.ObjectId,
+            type: Schema.Types.ObjectId,
             ref: "User",
     }],
     },
@@ -31,11 +31,11 @@ const UserDB = new DB (
     }
 );
 
-UserDB.virtual("followerTotal").get(function(){
+UserSchema.virtual("followerTotal").get(function(){
     return this.followers.length;
 });
 
-const User = model("User", UserDB);
+const User = model("User", UserSchema);
 
 module.exports = User;
 
