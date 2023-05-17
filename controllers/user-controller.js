@@ -57,11 +57,11 @@ const userController = {
         .catch((err) => res.json(err));
     },
 
-    addFollower({ params }, res) {
+    addFollower( req, res) {
         User.findOneAndUpdate(
-            { _id: params.userId },
-            { $addToSet: { followers: params.followerId }},
-            { new: true, runValidators: true }
+            { _id: req.params.userId },
+            { $addToSet: { followers: req.params.followerId }},
+            { new: true }
         )
         .then((userData)=> {
             if (!userData){
@@ -77,7 +77,7 @@ const userController = {
         User.findOneAndUpdate(
             { _id: params.userId },
             { $pull: { followers: params.followerId }},
-            {new: true} // potentally delete this
+            {new: true} 
         )
         .then((userData)=> {
             if (!userData){

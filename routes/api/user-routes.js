@@ -5,6 +5,6 @@ const {
 
 router.route("/").get(getAllUsers).post(createUser);
 router.route("/:id").get(getAllUserById).put(updateUser).delete(deleteUser);
-router.route("/:userId/followerId").post(addFollower).delete(removeFollower);
+router.route("/:userId/:followerId").post(addFollower).delete(removeFollower);
 
 module.exports = router;
