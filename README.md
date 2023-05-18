@@ -85,7 +85,7 @@ The following animation shows the POST and DELETE routes for a user’s reaction
 ## Links
 
 Github Repo Link:https://github.com/chelseyvalerio/socialmedia-network-database
-Video Demonstartion Link:https://drive.google.com/file/d/1Vl_g9Zj3T1efRfGek5LFVugj1ObNY-k_/view
+Video Demonstration Link:https://drive.google.com/file/d/1Vl_g9Zj3T1efRfGek5LFVugj1ObNY-k_/view
 
 ## Contact
 
