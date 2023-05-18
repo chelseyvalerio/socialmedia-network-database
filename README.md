@@ -43,7 +43,7 @@ The following animations show examples of the application's API routes being tes
 
 - GET routes to return a single user and a single thought being tested in Insomnia:
 
-![Demo that shows GET routes to return a single user being tested in Insomnia.]()
+![Demo that shows GET routes to return a single user being tested in Insomnia.](./Assets/getUserById.png)
 
 - POST, PUT, and DELETE routes for users being tested in Insomnia:
 
@@ -85,7 +85,7 @@ The following animation shows the POST and DELETE routes for a user’s reaction
 ## Links
 
 Github Repo Link:https://github.com/chelseyvalerio/socialmedia-network-database
-Video Demonstartion Link:
+Video Demonstartion Link:https://drive.google.com/file/d/1Vl_g9Zj3T1efRfGek5LFVugj1ObNY-k_/view
 
 ## Contact
 

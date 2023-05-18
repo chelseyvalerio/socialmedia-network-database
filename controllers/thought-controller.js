@@ -119,18 +119,18 @@ const thoughtController = {
       { $addToSet: { thoughts: { reactionsBody: params.reactions } } },
       { new: true}
     )
-      .then((thoughtData) => {
-        if (!thoughtData) {
+      .then((reactionData) => {
+        if (!reactionData) {
           res.status(404).json({ message: "No thought found" });
           return;
         }
-        res.json(thoughtData);
+        res.json(reactionData);
       })
       .catch((err) => res.json(err));
   },
 
 
-  removeReaction(req, res) {
+  removeReaction({ params }, res) {
     Thought.findOneAndUpdate(
       { _id: params.thoughtId },
       { $pull: { thoughts: { reactionsBody: params.reactions } } },
